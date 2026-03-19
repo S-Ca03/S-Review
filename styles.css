@@ -1,0 +1,170 @@
+*{
+    font-family: comic sans ms, sans-serif;
+}
+
+.body {
+    background-color:#242441 ;
+    transition: all 0.5s ease;
+}
+
+.fondo-img {
+  background: url("/Proyecto/img/Textura2.png");
+}
+
+#boton{
+    position: relative;
+    border-radius: 24px;
+}
+
+#boton button {
+    all: unset;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1px);
+    color: #aaa;
+    transition: transform 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+#boton button:hover {
+    transform: translateY(-2px);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* asegura que esté por encima de otros elementos */
+}
+
+.card-link {
+  text-decoration: none; /* quita subrayado */
+  color: inherit; /* mantiene colores */
+}
+
+.flooter {
+  position: relative;
+  top: 5px;     
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(1px);
+  width: fit-content; /*para que no sea largo */
+  margin: 20px auto; /*centrar horizontalmente */
+}
+
+.header {
+  background-color: #131318; /* Fondo oscuro */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.034);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  backdrop-filter: blur(1px);
+}
+
+.header-title {
+  color: #8f1111; /* Texto rojo oscuro */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header-subtitle {
+  color: #aaa; /* Texto gris claro */
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.content {
+        text-align: center;
+}
+
+  .card {
+    position: relative;
+    width: 320px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #11182788;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+  
+  .image-container {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* overlay oscuro */
+  .image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.2)
+    );
+  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  gap: 30px;
+  justify-content: center;
+}
+
+  .rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #4fc3f7;
+    z-index: 2;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 13px;
+    color: #d1d5db;
+    line-height: 1.4;
+  }
